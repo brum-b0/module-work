@@ -1,0 +1,146 @@
+@font-face {
+    font-family: LarkNeue;
+    src: url('Larke Neue Bold.ttf');
+}
+
+@font-face {
+    font-family: Code;
+    src: url('sourcecodepro.ttf');
+}
+
+@page {
+margin: 0.5cm;
+}
+
+body {
+	
+	overflow-x:hidden;
+	font-family:Calibri;
+	font-size:11px;
+	
+}
+
+#logo_cyber	{
+	
+	color:white;
+	text-align:center;
+	padding-top:20px;
+}
+
+#header	{
+
+	
+	background: #53CCF5; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#53CCF5, #1FC7FF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#53CCF5, #1FC7FF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#53CCF5, #1FC7FF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#53CCF5, #1FC7FF); /* Standard syntax */
+	width:110%;
+	height:80px;
+	position:relative;
+	left:-5%;
+	top:-8px;
+	/*box-shadow: 0px 10px 20px #242424;*/
+	z-index:1;
+	
+}
+
+#header_info	{
+	
+	width:60%;
+	height:80px;
+	/*background-color:lime;*/
+	text-align:left;
+	
+}
+
+#site_body	{
+	
+	width:100%;
+	min-height:90%;
+	position:relative;
+	top:-15px;
+	z-index:0;
+}
+
+#actual_content	{
+	
+	text-align:left;
+	padding:40px 30px 30px 30px;
+	width:102%;
+	position:relative;
+	left:-5%;
+}
+
+.subcontent	{
+	
+	background-color:#F5F5F5;
+	position:relative;
+	top:-30px;
+	z-index:-1;
+	border-radius:10px;
+	
+}
+
+h1,h2,h3	{
+	
+	font-family:LarkNeue;
+	
+}
+
+.title_bg	{
+	
+	color:white;
+	width:100%;
+	border-radius:10px;
+	/*background-color:#6E6E6E;*/
+	background-color:#53CCF5;
+	
+}
+
+#main_title	{
+	
+	border-radius:10px;
+	color:white;
+	background-color:black;
+	text-align:center;
+}
+
+.instructions	{
+	
+	padding-top:25px;
+	width:90%;
+	margin-left:6px;
+	
+}
+
+li	{
+	
+	padding-bottom:25px;
+	
+}
+
+li img	{
+	
+	max-width:70%;
+	text-align:middle;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	padding:15px 15px 15px 15px;
+	
+}
+
+ul li	{
+	
+	padding-bottom:10px;
+	
+}
+
+
+.title_bg h1,h2,h3	{
+	
+	padding:10px 20px 10px 20px;
+	
+}
+

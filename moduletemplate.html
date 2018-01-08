@@ -1,0 +1,215 @@
+
+<!-- saved from url=(0080)http://mountrouidoux.people.cofc.edu/CyberPaths/intrusiondetectionsystem_v2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>CTF Password Lab</title>
+		<link rel="stylesheet" style="text/css" href="./css/page_style.css" media="screen">
+		<link rel="stylesheet" style="text/css" href="./css/page_style2.css" media="print">
+		<script src="js/jquery.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+	
+		<div id="hide_page" onclick="close_popup()"></div>
+		<div id="pop_up">
+			<div id="close" onclick="close_popup()" style="padding-left:20px;padding-top:10px;">X</div>
+			
+				<img src="http://mountrouidoux.people.cofc.edu/CyberPaths/intrusiondetectionsystem_v2.html" id="pop_upimg" style="display:none;padding:20px 20px 20px 20px;">
+			
+		</div>
+		
+		<center>
+			<div id="header">
+				<div id="header_info">
+					<h1 id="logo_cyber">Cyberpaths</h1>
+				</div>
+			</div>
+			<div id="site_body">
+				<div id="actual_content">
+					<div id="main_title"><h2>Intrusion Detection Systems Lab</h2></div><br>
+					
+					<div class="title_bg"><h3>Lab Goals</h3></div>
+					<div class="subcontent">
+						<ol class="instructions">
+							<li>To get you acquainted with different Intrusion Detection Systems (IDSs)</li>
+							<li>To install an IDS on a real machine on GENI</li>
+							<li>To use the IDS to detect Distributed Denial of Service Attacks</li>
+							<li>To create and study IDS rules</li>
+							<li>To study IDS logs and understand them</li>
+						</ol>
+					</div>
+
+					<div class="title_bg"><h3>Quick introduction to Software Defined Networks (SDN)</h3></div>
+					<div class="subcontent">
+						<ol class="instructions">
+						This lab is using a powerful network architecture, Software Defined Networking (SDN). SDN is a flexible, agile, and fully programmable network paradigm. Openflow is the framework that offers this standardization and programmability for the software swiches that are used in SDN architectures.
+						In the SDN architecture, the network and control plane are separated, offering a logically centralized Monitor that can be easily programmable. This is pretty powerful, and, in more complicated topologies, can allow for the duplication of traffic through a switch to a monitor, a machine decentralized from the network and dedicated to monitoring for attacks. 
+						The following videos give good introductions to SDN and Openflow:
+						<ul>
+						<li><a href="https://www.youtube.com/watch?v=DiChnu_PAzA" target="_blank">Intro to SDN</a> </li>
+						<li><a href="https://www.youtube.com/watch?v=rYW7kQRyUvA" target="_blank">Intro to OpenvSwitch</a></li>
+						</ul>
+
+						</ol>
+					</div>
+
+					<div class='title_bg'><h3>Prerequisites</h3></div>
+                                        <div class='subcontent'>
+                                            <ol class='instructions'>
+						    <li>You will need basic command line knowledge to complete this lab. Codecademy has a great <a href='https://www.codecademy.com/learn/learn-the-command-line' target=_blank>tutorial</a> on this topic. </li> 
+						    <li>In this lab, you will implement a computer network attack, Denial of Service (DoS). This attack is designed to deprive services, such as web content, from legitimate users. From Wikipedia: "In computing, a denial-of-service attack is a cyber-attack where the perpetrator seeks to make a machine or network resource unavailable to its intended users by temporarily or indefinitely disrupting services of a host connected to the Internet." You can watch a <a href='https://www.linkedin.com/learning/ethical-hacking-denial-of-service/understanding-denial-of-service' target=_blank> video</a> about this attack and  <a href='https://www.symantec.com/connect/blogs/iot-devices-being-increasingly-used-ddos-attacks' target=_blank> read more</a> about recent DDoS attacks using the Internet of Things interconnected devices. </li>
+						    <li>To analyze the computer network traffic from this attack, we will use tool called <a href='https://www.wireshark.org/' target=_blank>Wireshark</a>. Here is a quick <a href='https://www.youtube.com/watch?v=TkCSr30UojM' target=_blank> video tutorial</a> for this tool.</li>
+						    <li>Iperf is a tool that is used through command line to generate computer network traffic that resembles regular usage of a computer network. You can read more about this tool <a href='https://www.techrepublic.com/blog/linux-and-open-source/iperf-a-simple-but-powerful-tool-for-troubleshooting-networks/' target=_blank> here</a>.</li>
+						    <li>Hping3 is another computer networking tool that you will use. This tool, with the proper command line options, can generate a flood of computer network traffic that can overwhelm and take over networking resources. You can read more about this tool <a href='https://en.wikipedia.org/wiki/Hping' target=_blank> here</a>.</li>
+						    <li>Snort is an Intrusion Detection System that alerts about computer network attacks by crossckecking their characteristics against a database of attack signatures. You can learn more about Snort by reading the original <a href='https://www.usenix.org/legacy/event/lisa99/full_papers/roesch/roesch.pdf' target=_blank> publication</a> and the <a href='http://manual-snort-org.s3-website-us-east-1.amazonaws.com/' target=_blank> manual</a>.</li>
+                                                                                                                                                                                                                                                   <ol>
+                                        </div>
+					
+					<div class="title_bg"><h3>Part 1: Setting up the topology</h3></div>
+					<div class="subcontent">
+						<ol class="instructions">
+							<li>Create a new slice under the corresponding project.</li>
+							<li>Click the "Add Resources" button located on the page of your newly created slice.</li>
+							<li>Click the URL option.<br><img src="img/screenshots/Screenshot_1.png"></li>
+							<li>Paste the following link into the input box: <b style="color:red;">http://mountrouidoux.people.cofc.edu/CyberPaths/files/IDSLabEasyRSpec.txt <!-- CHANGE THE LINK FOR THE RSPEC HERE --></b>.</li>
+							<li>Then, click on the "Select" button.<br><img src="img/screenshots/Screenshot_25.png"></li>
+							<li>Your topology should now be loaded and look similar to the picture below.<br><img src="img/screenshots/Screenshot_97.png"></li>
+							<li>Now, click on "Site 1", select one of the available aggregates from the dropdown menu on the left, and reserve the resources.<br><img src="img/screenshots/Screenshot_27.png"></li>
+							<li>Then, wait some time until all your resources are ready. You can check the status of these by going to the page of your slice. If the background color of a given node is gray, then that node is not yet available; if it is green, then it is ready.</li>
+						<ol>
+					</ol></ol></div>
+					
+					<div class="title_bg"><h3>Part 2: Setting up your nodes; Node: Monitor</h3></div>
+					<div class="subcontent">
+						<ol class="instructions">
+							<li>Now that your topology resources are reserved and available for you to log into (for help on how to log into the nodes, please refer to one of the previous guides), we need to set up different things in each node. Let's get started with the Monitor.</li>
+							<li>We must set up the intrusion detection software (<a href="https://www.snort.org/" target="_blank">Snort</a>, in our case) so the Monitor node can act like an Intrusion Detection System (IDS) and monitor our topology.</li>
+							<li>On the Monitor, execute the following command to install snort:<br><br>
+								<ul>
+									<li><span style="font-family:Code;">sudo apt-get install snort -y</span><br><br>
+									<ul>
+										<li>At some point during the installation of snort, you will be asked for a home network range. Enter: <b style="color:red;">10.10.0.0/16</b>. This is the mask applied to the machines in the network of the topology.</li>
+									</ul>
+									</li>
+								</ul>
+							</li>
+							<li>The final change to be applied to the Contrller to finish the IDS setup is commenting out lines 19 and 20 of the community-virus rules of the IDS. We do this by adding pound signs (#) in front of the lines. In order to do so, execute the following command:<br><br>
+								<ul>
+									<li><span style="font-family:Code;">sudo nano -c /etc/snort/rules/community-virus.rules</span></li>
+									<li>On the editor, go down until you reach line 19. Comment it out along with line 20. It should look like this:<br><img src="img/screenshots/Screenshot_29.png"></li>
+									<li>Press "Ctrl + X" to finish editing.</li>
+									<li>Enter "Y" when prompted.</li>
+									<li>Press "Enter;" to leave the same name for the file.</li>
+									<li>Now, we are done setting up the Monitor!</li>
+								</ul></li>
+							<li><b>Think about what you just did, and answer the following question:</b>
+								<ol>
+									<li>What is the purpose of the Snort IDS?
+									</li>
+								</ol>
+							</li>
+
+						</ol>
+					</div>
+					
+					<div class="title_bg"><h3>Part 3: Setting up your nodes; Node: OVS</h3></div>
+					<div class="subcontent">
+						<ol class="instructions">
+							<li>Now, we need to set up the last node, the OVS. This switch relays packets like a regular switch, but it is also highly programmable since it uses the OpenFlow framework! Log in to your OVS node.</li>
+							<li>Only one command needs to be executed in order to set up the traffic mirroring for the Monitor. However, we need to look at the interfaces first.<br><br>
+							<li>After you run "ifconfig", you should see several interfaces listed, like eth0, eth1, eth2...</li>
+							<li>Now, run "ifconfig" on the Monitor, and find which interface on the OVS has an IP that matches up with the Monitor's eth1 IP (for example: if the Monitor's eth1 IP is 10.10.3.1, find which interface on the OVS has the IP 10.10.3.2).</li>
+							<li>Now, go back to the OVS node. There, execute the following command. Here, ethC represents the interface that matches with the Monitor's IP, and ethX, ethY, and ethZ are the three remaining interfaces besides eth0 and lo:<br><br>
+								<ul>
+									<li><span style="font-family:Code;">sudo ovs-vsctl -- set Bridge br0 mirrors=@m -- --id=@ethX get Port ethX -- --id=@ethY get Port ethY -- --id=@ethZ get Port ethZ -- --id=ethC get Port ethC -- --id=@m create Mirror name=mymirror select-dst-port=@ethX,@ethY,@ethZ select-src-port=@ethX,@ethY,@ethZ output-port=@ethC</span></li>
+								</ul>
+							</li>
+							<li><b>Verify that everything works:</b><br><br>
+								<ol>
+									<li> Run ping between the attacker and the victim. Does it go through?
+									</li>
+									<li> While running ping between the attacker and the victim, run tcpdump on the proper monitor interface (how will you find this?). Verify that the ping is mirrored to the monitor machine. 
+									</li>
+								</ol>
+							</li>
+							<li><b>Think about what you just did, and answer the following questions:</b><br><br>
+								<ol>
+									<li>What is the OVS (Openflow Virtual Switch)? What does a switch do?
+									</li>
+									<li>Why do we need a Monitor for the switch?
+									</li>
+								</ol>
+							</li>
+						</ol>
+					</div>
+
+					<div class="title_bg"><h3>Part 4: Experimenting - Running an Internal Attack</h3></div>
+					<div class="subcontent">
+						<ol class="instructions">
+							An internal attack is an attack coming from machines connected directly to the network switch. We will be running such an attack in order to see how correlation and mitigation take place on an internal attack.<br><br>
+							<li>
+								To start Snort, you need to open another terminal for the Monitor and enter the following command:<br><br>
+								<ul>
+									<li><span style="font-family:Code;">sudo snort -c /etc/snort/snort.conf -A fast -i eth1</span></li>
+								</ul>
+							</li>
+							<li>Now, we need to simulate normal traffic on our network to have something to which we can compare the DDoS attack. To simulate traffic on the networkb we will use <a href="https://www.iperf.fr/">iPerf</a>. iPerf requires a Sever and a Client to generate traffic, so we will use the Victim as the Server and the User as the Client to simulate traffic.
+							To start the server on the <b style="color:red;">Victim</b>, execute the following command:<br><br>
+							<ul>
+								<li><span style="font-family:Code;">iperf -s</span></li>
+							</ul>
+							
+							To start the traffic simulation, we need to make the iperf client start communicating with the Server. We will start a communication that will last two minutes (120 seconds) with the following command on the <b style="color:red;">User</b>:<br><br>
+							<ul>
+								<li><span style="font-family:Code;">iperf -c victim -t 120</span></li>
+							</ul></li>
+							<li>
+								Finally, it is time to run the attack! To run the attack, go to the terminal of the Attacker, and execute the following command:<br><br>
+								<ul>
+									<li><span style="font-family:Code;">sudo timeout -sHUP 20s hping3 -i ul -S --flood --rand-source -p 80 victim</span></li>
+								</ul>
+							</li>
+							<li><b>Trust but verify!</b><br><br>
+								<ul>
+									<li>You will need to verify that the traffic is duplicated to the monitor. How can you do this? Hint: a tool that records network traffic may be useful. Describe your methodology and commands that you have used. Include screenshots. </li>
+								</ul>
+							</li>
+
+							<li><b>If your nodes cannot ping each other, verify that you have done the following:</b>
+								<ol>
+									<li>Do all the nodes belong to the same network? To verify this, log in to all the nodes (attacker, victim, user, monitor). Run ifconfig. Think about networks and subnets. Do all your nodes belong to the same network?
+									</li>
+									<li>If they do not belong to the same network, you will need to use the ifconfig command to fix the problem. The command "sudo ifconfig eth(num) (node_IP) netmask (node_netmask)" will change a specific port's IP address and netmask to node_IP and node_netmask, respectively.
+									</li>
+								</ol>
+							</li>
+
+							
+						</ol>
+					</div>
+					<div class="title_bg"><h3>Part 5: Create your own rule!</h3></div>
+					<div class="subcontent">
+						<ol class="instructions">
+							<li>Now that you understand what an IDS is and what Snort is for, it is your turn to create a Snort rule and Snort alert and test them.</li>
+							<li>The rule you create should be based on what you did in Part 5 of the tutorial.</li>
+							<li>Add your rule at the end of the following file: <span style="font-family:Code;">/etc/snort/rules/&lt;rule&gt;.rules</span>.</li>
+							<li>Your alert should have a characteristic message, such as "Dr. X snort alert", and a sequence number that is higher than 10,000 (Numbers lower than 10,000 are reserved and used by Snort).</li>
+							<li>Test your alert by running the same DDoS attack you ran earlier. Check the snort alert file to see if your rule worked!</li>
+							<li>Things to consider: did you configure the HOME_NET properly? Go to /etc/snort/snort.conf, and look for the word "HOME". Then, modify this address to apply to your home network.</li>
+							<li>Things to consider: Where are the snort log files? Usually log files in the linux operating system are in the folder: /var/log/snort.</li>
+						</ol>
+					</div>
+					
+					<!--div class='title_bg'><h3>Survey</h3></div>
+					<div class='subcontent'>
+						<ol class='instructions'>
+							
+						</ol>
+					</div-->
+					
+				</div>
+			</div>
+		</center>
+	
+
+</body></html>
+
