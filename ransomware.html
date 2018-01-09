@@ -1,0 +1,119 @@
+
+<!-- saved from url=(0080)http://mountrouidoux.people.cofc.edu/CyberPaths/intrusiondetectionsystem_v2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Ransomware Lab</title>
+		<link rel="stylesheet" style="text/css" href="./css/page_style.css" media="screen">
+		<link rel="stylesheet" style="text/css" href="./css/page_style2.css" media="print">
+		<script src="js/jquery.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+	
+		<div id="hide_page" onclick="close_popup()"></div>
+		<div id="pop_up">
+			<div id="close" onclick="close_popup()" style="padding-left:20px;padding-top:10px;">X</div>
+			
+				<img src="http://mountrouidoux.people.cofc.edu/CyberPaths/intrusiondetectionsystem_v2.html" id="pop_upimg" style="display:none;padding:20px 20px 20px 20px;">
+			
+		</div>
+		
+		<center>
+			<div id="header">
+				<div id="header_info">
+					<h1 id="logo_cyber">Cyberpaths</h1>
+				</div>
+			</div>
+			<div id="site_body">
+				<div id="actual_content">
+					<div id="main_title"><h2>Ransomware Lab</h2></div><br>
+					
+					<div class="title_bg"><h3>Lab Goals</h3></div>
+					<div class="subcontent">
+						<ol class="instructions">
+							<li> lorem</li>
+							<li> ipsum </li>
+						</ol>
+					</div>
+
+					<div class="title_bg"><h3>Quick introduction to Ransomware</h3></div>
+					<div class="subcontent">
+						<ol class="instructions">
+						Ransomware is malicious software that blocks access to a computer or information until a specific amount of money has been paid. It belongs to the general category of <a href='https://en.wikipedia.org/wiki/Malware' target=_blank>malware</a>, i.e., malicious, intrusive software.
+						<br>
+
+						</ol>
+					</div>
+
+					<div class='title_bg'><h3>Prerequisites</h3></div>
+                                        <div class='subcontent'>
+                                            <ol class='instructions'>
+						    <li>You will need basic command line knowledge to complete this lab. Codecademy has a great <a href='https://www.codecademy.com/learn/learn-the-command-line' target=_blank>tutorial</a> on this topic.</li> 
+						    <li>Basic cryptography: Khan academy has a great class on cryptography and these ciphers that can be found <a href='https://www.khanacademy.org/computing/computer-science/cryptography' target=_blank>here.</a> 
+						    <li>Hashing: <a href='https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/bitcoin/v/bitcoin-cryptographic-hash-function' target=_blank>Here</a> is an interesting video from khan academy on hash functions.</li>                                           
+					    </ol>
+                                        </div>
+					
+					<div class="title_bg"><h3>Part 1: Setting up the topology</h3></div>
+					<div class="subcontent">
+						<ol class="instructions">
+							<li>insert blaine's setup here; skeleton.jpg</li>
+							
+						</ol>
+					</div>
+					
+					<div class="title_bg"><h3>Part 2: Setting up your lorem ipsum: Monitor</h3></div> <!-- lazily leave this div here incase rspecs need further setting up(CAN BE DELET) -->
+					<div class="subcontent">
+						<ol class="instructions">
+							<li>Now that your topology resources are reserved and available for you to log into (for help on how to log into the nodes, please refer to one of the previous guides), we need to set up different things in each node. Let's get started with the Monitor.</li>
+							<li>We must set up the intrusion detection software (<a href="https://www.snort.org/" target="_blank">Snort</a>, in our case) so the Monitor node can act like an Intrusion Detection System (IDS) and monitor our topology.</li>
+							<li>On the Monitor, execute the following command to install snort:<br><br>
+								<ul>
+									<li><span style="font-family:Code;">sudo apt-get lorem ipsum -y</span><br><br>
+									<ul>
+										<li>At some lorem ipsum point during the installation of snort, you will be asked for a home network range. Enter: <b style="color:red;">10.10.0.0/16</b>. This is the mask applied to the machines in the network of the topology.</li>
+									</ul>
+									</li>
+								</ul>
+							</li>
+							<li>The final change to be applied to the Contrller to finish the IDS setup is commenting out lines 19 and 20 of the community-virus rules of the IDS. We do this by adding pound signs (#) in front of the lines. In order to do so, execute the following command:<br><br>
+								<ul>
+									<li><span style="font-family:Code;">sudo nano -c /etc/snort/rules/community-virus.rules</span></li>
+									<li>On the editor, go down until you reach line 19. Comment it out along with line 20. It should look like this:<br><img src="img/screenshots/Screenshot_29.png"></li>
+									<li>Press "Ctrl + X" to finish editing.</li>
+									<li>Enter "Y" when prompted.</li>
+									<li>Press "Enter;" to leave the same name for the file.</li>
+									<li>Now, we are done setting up the Monitor!</li>
+								</ul></li>
+							<li><b>Think about what you just did, and answer the following question:</b>
+								<ol>
+									<li>What is the purpose of the Snort IDS?
+									</li>
+								</ol>
+							</li>
+
+						</ol>
+					</div>
+					
+					
+
+					<div class="title_bg"><h3>Part 3: The Mission</h3></div>
+					<div class="subcontent">
+
+						<ol class="instructions">	
+							<li> Log onto the machine assigned by your instructor.</li>
+							<li> Find all the files by using the proper directory listing commands and view those files.</li>
+							<li> Run the file scan_directories.py to scan your machine for viruses by using the following command: <br><br> python scan_directories.py</li>
+							<li> Open the text files again, after the scan_directories.py has been executed.</li>
+							<li> What do you think happened? Can you convert the files back to their original form?</li>
+							<li> Should you run a file that someone sent you on an email, even if this looks like a file sent by your manager/instructor/ someone you know? <b>Why?</b></li>						
+						</ol>
+					</div>
+					
+					
+				</div>
+			</div>
+		</center>
+	
+
+</body></html>
+
