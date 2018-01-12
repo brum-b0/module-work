@@ -1,0 +1,59 @@
+Nuclear energy is a comparatively new source of energy. The first nuclear power plant was commissioned in June 1954 in Obninsk, Russia. Fossil fuels offer a limited source of energy, as they are non-renewable. Eventually these supplies will cease, this is predicted to be in the next few decades. An estimate based on fuel consumption in America, predicts as early as 2020 there will be no fossil fuels left.
+
+The energy used by the whole world is approximated to be the coal equivalent to 2790 Gigatons per year. Fossil fuels reserves total for the world in 1980 had approximately 8685 Gigatons of coal and 91.2 Gigatons of oil. This is why extensive research has gone into looking for new sources of energy to keep things powered.
+
+Energy sources currently being used are hydroelectricity, wind turbines, solar power, fossil fuels and nuclear power, and now also hydrogen fuel cells. There is much controversy over the health and safety issues of using nuclear power, especially after Three Mile Island and the Chernobyl disasters.
+
+Where does the energy come from?
+Nuclear fission
+The nucleus is the centre of the atom which is normally made up of the same number of protons as it has neutrons. However, some very large nuclei in certain isotopes have an imbalance. They can often be found with too many neutrons, and this imbalance will result in the nucleus becoming unstable.
+
+Uranium-235 is a radioactive substance which due to its large size and unstable state can undergo induced fission. Its nucleus can be split into smaller atoms when induced by a neutron. This process will release two or three neutrons, depending on how the atom splits. These new neutrons can then initiate the decomposition of the nuclei of other atoms of Uranium. Propagation by the chain reaction releases more neutrons and causes further nuclear splits.
+
+Under controlled conditions, the rate of this chain reaction can be kept at a constant rate. This produces high temperatures but is not allowed to react out of control as in a nuclear bomb. The heat produced is used to turn water into steam, the steam then turns a turbine and generator, creating electricity.
+
+Nuclear Reactors
+In a reactor the uranium source required is 3-4% Uranium-235. Therefore it is necessary to enrich natural Uranium to use for nuclear power. This is done by converting uranium oxide extracted from ore into gaseous form, uranium hexafluoride. From this form it can be enriched from its natural proportion of 0.7% uranium-235 to 3-4%, this is done by separation of isotopes. A higher enrichment means better efficiency, and ordinary water can then be used as a moderator.
+
+The form of uranium usually used is pellet form, these are arranged into rods and then to bundles. These bundles are surrounded by a moderator such as water, graphite or heavy water. The moderator slows down the emitted neutrons by reducing their energy as they collide with the nuclei of the moderator. Control rods are placed in the bundles which control the rate of the nuclear reaction. These can also be used to shut down the reactor completely when something goes wrong.
+
+These control rods are materials which absorb neutrons, such as Cadmium and Boron. They work by reducing the number of neutrons in the reactor and therefore slowing down the reaction and consequently reducing the heat. To reduce heat, the rods are put further into the bundles where they absorb more neutrons. To raise the heat the opposite is done, and the heat level rises.
+
+As the atoms are split the energy is released as heat. This is used to heat water and turns it into steam. The steam drives a steam turbine, which spins a generator to produce electricity. This is what happens in a basic reactor, others include the use of intermediate heat exchangers or gaseous coolant fluid. The set up of a nuclear power plant is basically the same as that of a coal power plant. The main difference is how the water is heated to produce steam, from then on the turbines and generator work in the same way for both plants.
+
+Efficiency of Nuclear energy
+The majority, around 85%, of the energy gained from nuclear fission is the kinetic energy of the products. In solid fuel, particles can only move a very short distance. Therefore the kinetic energy is converted into heat as the particles are hitting against each other. The other 15% of the energy is gained from the Gamma rays emitted during the fission process, and from the kinetic energy of the neutrons released.
+
+The time taken to capture and split the neutron is minute, taking only 1×10-12 seconds. The energy gained by splitting an atom comes from the fact that the products formed from the fission, together with the neutrons weigh less than the original product. The change in mass appears in the form of energy, and follows Einstein’s equation E=mc2.
+
+The decay of a single Uranium-235 atom releases on average 200 million electron volts, the equivalent to 3.204×10-11 joules of energy. In contrast, 4 electron volts are released per molecule of carbon dioxide in the combustion of fossil fuels. To compare obtainable energy content between fossil fuels and nuclear fuel, ‘a pound of highly enriched uranium … is equal to something on the order of a million gallons of gasoline’. So it can be seen that this is a very compact source of energy.
+
+The reason for the large amount of energy released is because the forces involved in nuclear reactions are much greater than those involved in chemical reactions. Uranium is a very dense metal at 18.95g/cm3 and the nucleus of a Uranium atom is very dense compared to the whole atom. The protons and neutrons are held very tightly together and the electrons orbiting the nucleus are comparatively far away, so this shows how the bonds involved are so much stronger.
+
+Nuclear fission is a very efficient source of energy because of the low amounts of waste products. Combustion of fossil fuels produces waste products such as ash and toxic fumes. This reduces the amount of usable energy produced by reaction, and therefore lowers its efficiency.
+
+Uranium is found in most rocks, at 0.000002% concentration. The Uranium found in the earths crust contains 99.3% Uranium-238 and 0.7% Uranium-235. Another possible source to extract Uranium from is seawater, the key is to find it in quantities that is economical for extraction.
+
+Is it safe?
+The reactor is contained within a concrete liner, which shields radiation. Since the Chernobyl incident, the reactor is now usually contained within a secondary containment structure made of steel. This prevents the leakage of radioactive steam in the event of an accident.
+
+The general view on nuclear power is that it is very bad for the environment. But in reality the radioactivity released into the atmosphere by a nuclear power plant is less than that released by a coal power plant. Additionally, coal power plants also pollute that environment with carbon and sulphur. Obviously the radiation produced by the nuclear power plant is greater in volume than that produced by the coal power plant, but the radiation is contained within the reactor. The environmental issues with this containment are what happens to the radioactive waste when a nuclear power plant is shut down.
+
+Half life and nuclear decay
+In the event of a nuclear leak, the effects of radiation on the environment can be huge. This can be seen from the after effects of the Chernobyl power plant when it exploded.
+
+In 1986, about 22% of the country was contaminated by the radiation of caesium-137. Ten to fifteen years later, 21% is still contaminated. This shows the large amount of time taken for radiation to be removed from the environment. The half-life of Uranium-235 is 700 million years, this is the time taken for half of the radioactive atoms in a sample to decay. So it can be seen that in the event of a nuclear leak, radioactive contamination causes very long term problems.
+
+The Chernobyl Accident
+The problems at the Chernobyl power plant were with reactor No. 4. Specific attributes of this reactor were that it was a light-water-cooled graphite-moderated reactor. This type of reactor has been criticised for its lack of containment structure, and large quantities of combustible graphite within its core. The accident actually occurred during a test run. The idea was to see if the turbines could produce the energy needed during a power cut, to keep coolant pumps working. Safety systems were turned off so as not to affect the test, and the reactor was reduced to 25% power capacity.
+
+Due to a fault the power level plummeted to below 1%, so technicians began to raise the power level slowly. But a power surge occurred and the emergency shutdown, which is designed to halt the chain reactions, failed. The rising power level and temperature got out of control, causing an explosion. This blew off a 1000 tonne sealing cap, causing the radioactive fission products to be thrown up into the atmosphere. The fuel rods melted and graphite moderator set fire.
+
+The mistake blamed for this disaster is that control rods were raised then immediately reinserted into the bundles. The inserting of control rods usually reduces the rate of the chain reaction. But in the case too many control rods were raised and replaced. This then had the reverse effect of raising power levels so fast that it caused the destruction of the reactor.
+
+Lessons learned from disasters
+In 2000, Germany decided to phase out nuclear power, and look into sources of power with less severe possible consequences on the environment. The disaster created international debate over the economics and controllability of nuclear power. In most European countries, no new research is being carried out on continuing to build nuclear power plants. Instead the research is aimed at improving safety features at existing nuclear power plants and disposal of nuclear waste. As of 1995, conversely, Asia and Eastern Europe have over 100 reactor units either planned or being constructed.
+
+The number of nuclear power plant inspectors rose vastly after this disaster, and general safety awareness has greatly improved. New regulations on emergency procedures where also put in place.
+
+The effects of the radiation are still affecting inhabitants of nearby countries, and are causing severe health problems amongst the young and old. At least now safety and disaster management are main issues within this industry, and hopefully this kind of event will not be allowed to happen in the future.
