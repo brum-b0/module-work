@@ -1,0 +1,109 @@
+
+<!-- saved from url=(0080)http://mountrouidoux.people.cofc.edu/CyberPaths/intrusiondetectionsystem_v2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>CTF Password Lab</title>
+		<link rel="stylesheet" style="text/css" href="./css/page_style.css" media="screen">
+		<link rel="stylesheet" style="text/css" href="./css/page_style2.css" media="print">
+		<script src="js/jquery.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+	
+		<div id="hide_page" onclick="close_popup()"></div>
+		<div id="pop_up">
+			<div id="close" onclick="close_popup()" style="padding-left:20px;padding-top:10px;">X</div>
+			
+				<img src="http://mountrouidoux.people.cofc.edu/CyberPaths/intrusiondetectionsystem_v2.html" id="pop_upimg" style="display:none;padding:20px 20px 20px 20px;">
+			
+		</div>
+		
+		<center>
+			<div id="header">
+				<div id="header_info">
+					<h1 id="logo_cyber">Cyberpaths</h1>
+				</div>
+			</div>
+			<div id="site_body">
+				<div id="actual_content">
+					<div id="main_title"><h2>CTF Password Lab</h2></div><br>
+					
+					<div class="title_bg"><h3>Lab Goals</h3></div>
+					<div class="subcontent">
+						<ol class="instructions">
+							<li> lorem</li>
+							<li> ipsum</li>
+						</ol>
+					</div>
+
+					<div class="title_bg"><h3>Quick introduction to CTFs and Passwords</h3></div>
+					<div class="subcontent">
+						<ol class="instructions">
+						Capture The Flag (CTF) is a common cyber security competition format where participants have
+						to find a secret or vulnerability or error (flag) that is hidden in a file, website, log, etc. CTFs
+						questions are asking for short answers, often single word. This exercise simulates a CTF
+						experience. Although you are only competing with yourself, this will be a “detective” style
+						exercise to reveal the secrets of four users, Alice, Bob, Carol, and David. Alice is not security
+						conscious at all! She saves passwords unsafely. Bob is a little more security aware; he still saves
+						passwords unsafely, but not plainly as Alice. Carol is pretty aware of security, her passwords are
+						saved in a safe manner, however they can be cracked because Carol puts convenience to
+						memorize a password above all! Finally, David is very security aware. He saves his passwords
+						securely and they are hard to guess!
+						
+
+						</ol>
+					</div>
+
+					<div class='title_bg'><h3>Prerequisites</h3></div>
+                                        <div class='subcontent'>
+                                            <ol class='instructions'>
+						    <li>Basic cryptography: Khan academy has a great class on cryptography and these ciphers that can be found <a href='https://www.khanacademy.org/computing/computer-science/cryptography' target=_blank> here </a></li> 
+						    <li>Passwords and how these should be stored: You can find a lot of <a href='https://www.lifewire.com/strong-password-examples-2483118' target=_blank>examples</a> about building strong passwords. We also recommend that you try to measure some of your password strength by using this <a href='https://howsecureismypassword.net/' target=_blank>tool.</a></li>
+						    <li>Hashing: Here is an interesting <a href='https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/bitcoin/v/bitcoin-cryptographic-hash-function' target=_blank>video</a> from khan academy on hash functions.</li>
+						    <li>Some tools that will be useful in this lab:</li>
+							<ul>
+								<li> <a href='http://rumkin.com/tools/cipher/' target=_blank>Rumkin</a> Cipher Tools</li>
+						   		<li> <a href='https://crackstation.net/' target=_blank>CrackStation</a> Hash Cracker</li>
+							</ul>                                            
+					    </ol>
+                                        </div>
+					
+					<div class="title_bg"><h3>Part 1: Setting up the topology</h3></div>
+					<div class="subcontent">
+						<ol class="instructions">
+						  <li>Use the provided RSpec</li>
+						  <li>(ON ALL MACHINES)Run the following commands:<br><br> "sudo apt-get update --fix-missing"<br> "sudo apt-get install python-pip"<br> "sudo pip install pexpect"</li>
+						  <li>(ON ALL MACHINES) Download the Password Cracking Python File and run it WITH sudo - it MUST be run with sudo... ¡or else!</li>
+							
+						</ol>
+					</div>
+					
+				
+					
+					
+
+					<div class="title_bg"><h3>Part 2: The Mission: Snoop around</h3></div>
+					<div class="subcontent">
+
+						<ol class="instructions">
+						<b>Your mission is to find Alice’s, Bob’s, Carol’s, and David’s password.</b><br><br>	
+						<li>Once you've set up everything, log back onto the pivot machine and switch to the pivot user by using "su pivot" with the password: ...</li>
+							<li> Look around in the files on the pivot machine. Alice's file is somewhere and it has her password!</li>
+							<li> After you find Alice's password, login to Alice's machine using the command: ssh alice@alice</li>
+							<li> Look around in Alice's machine. She has saved Bob's password somewhere. After you find it, try to crack it. Think about what kind of encryption scheme Bob may be using for his password. You can use one of the recommended sites in the sources to break Bob's password.</li>
+							<li> After you crack Bob's password, login to Bob's machine using the command: ssh bob@bob</li>
+							<li> Look around bob's directories. You may need to dig a bit more into Bob's directories to find Carol's password file. After you find it, try to crack it. Keep in mind that Carol is a secure user, so she may have sent her file securely saves using a one-way hash function. you can use one of the recommended sites in the sources to break Carol's password.</li>
+							<li> After you crack Carol's password, login to Carol's machine using the command: ssh carol@carol </li>
+							<li> Look around Carol's directories. You may need to dig deeply to find David's password file. After you find it, try to break it. Keep in mind that David is a secure user, so he may have sent his file securely and saved using a one-way hash function.You can use one of the recommended sites in the sources to break Carol’s password.</li>
+							<li> You may not be able to break David’s password, unless you use a tool such as <a href='https://github.com/vanhauser-thc/thc-hydra' target=_blank>hydra</a> or <a href='https://github.com/magnumripper/JohnTheRipper' target=_blank>john</a> the ripper. You can find out more about these tools in the attached sources.
+							
+						</ol>
+					</div>
+					
+					
+				</div>
+			</div>
+		</center>
+	
+
+</body></html>
+
