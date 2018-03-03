@@ -11,7 +11,7 @@
       <execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo wget -P /local/ --no-check-certificate https://raw.githubusercontent.com/s-nat-e0/module-work/master/ransomware_files/RansomwareFile2.txt" shell="/bin/sh"/>
       <execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo wget -P /local/ --no-check-certificate https://raw.githubusercontent.com/s-nat-e0/module-work/master/ransomware_files/RansomwareFile3.txt" shell="/bin/sh"/>
       <execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo wget -P /local/ --no-check-certificate https://raw.githubusercontent.com/s-nat-e0/module-work/master/ransomware_files/RansomwareFile4.txt" shell="/bin/sh"/>
-      <execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo wget -P /local/scan_directories.py --no-check-certificate https://raw.githubusercontent.com/s-nat-e0/module-work/master/ransomware_files/RansomwareLabFormDirectories.py" shell="/bin/sh"/>
+      <execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo wget -P /local/ --no-check-certificate https://raw.githubusercontent.com/s-nat-e0/module-work/master/ransomware_files/RansomwareLabFormDirectories.py" shell="/bin/sh"/>
     </services>
   </node>
 </rspec>
