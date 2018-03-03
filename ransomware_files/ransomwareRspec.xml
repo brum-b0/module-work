@@ -7,11 +7,11 @@
     </sliver_type>
     <services xmlns="http://www.geni.net/resources/rspec/3">
       <execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo apt update" shell="/bin/sh"/>
-      <execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo wget -P /local/ --no-check-certificate https://raw.githubusercontent.com/s-nat-e0/module-work/master/ransomware_files/RansomwareFile1.txt" shell="/bin/sh"/>
-      <execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo wget -P /local/ --no-check-certificate https://raw.githubusercontent.com/s-nat-e0/module-work/master/ransomware_files/RansomwareFile2.txt" shell="/bin/sh"/>
-      <execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo wget -P /local/ --no-check-certificate https://raw.githubusercontent.com/s-nat-e0/module-work/master/ransomware_files/RansomwareFile3.txt" shell="/bin/sh"/>
-      <execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo wget -P /local/ --no-check-certificate https://raw.githubusercontent.com/s-nat-e0/module-work/master/ransomware_files/RansomwareFile4.txt" shell="/bin/sh"/>
-      <execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo wget -P /local/ --no-check-certificate https://raw.githubusercontent.com/s-nat-e0/module-work/master/ransomware_files/RansomwareLabFormDirectories.py" shell="/bin/sh"/>
+      <execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo wget -P /local/ --no-check-certificate https://raw.githubusercontent.com/s-nat-e0/module-work/master/ransomware_files/A_Classified_View_on_North_Korea_Nuclear_Power.txt" shell="/bin/sh"/>
+      <execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo wget -P /local/ --no-check-certificate https://raw.githubusercontent.com/s-nat-e0/module-work/master/ransomware_files/A_Second_View_on_North_Korea.txt" shell="/bin/sh"/>
+      <execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo wget -P /local/ --no-check-certificate https://raw.githubusercontent.com/s-nat-e0/module-work/master/ransomware_files/Survey_of_Nuclear_Energy.txt" shell="/bin/sh"/>
+      <execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo wget -P /local/ --no-check-certificate https://raw.githubusercontent.com/s-nat-e0/module-work/master/ransomware_files/Understanding_Nuclear_Power.txt" shell="/bin/sh"/>
+      <execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo wget -P /local/ --no-check-certificate https://raw.githubusercontent.com/s-nat-e0/module-work/master/ransomware_files/scan_directories.py" shell="/bin/sh"/>
     </services>
   </node>
 </rspec>
